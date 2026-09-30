@@ -37,6 +37,10 @@ my_profile/
 2. Buka file `index.html` langsung di browser, atau
 3. Gunakan live server (misal: Live Server di VS Code) untuk pengembangan
 
+## Video P1
+
+- [Video Presentasi P1](https://drive.google.com/file/d/184V2cCFnXmJepBHhWGE__E0HJPiP5oje/view?usp=drive_link)
+
 ## Kontak
 
 - **Nama:** Ahmad Farizi
