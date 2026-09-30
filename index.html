@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Farizi - Portofolio Pribadi | Universitas Madura</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            900: '#4c1d95',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo / Name -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition">
+                    AF
+                </div>
+                <span class="font-bold text-lg text-slate-900 tracking-tight">Ahmad Farizi</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-brand-600 transition">Beranda</a>
+                <a href="#about" class="hover:text-brand-600 transition">Tentang</a>
+                <a href="#services" class="hover:text-brand-600 transition">Layanan</a>
+                <a href="#process" class="hover:text-brand-600 transition">Proses</a>
+                <a href="#portfolio" class="hover:text-brand-600 transition">Portofolio</a>
+                <a href="#blog" class="hover:text-brand-600 transition">Blog</a>
+            </nav>
+
+            <!-- Contact Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-brand-600 text-white font-medium text-sm shadow-lg shadow-brand-600/30 hover:bg-brand-700 transition transform hover:-translate-y-0.5">
+                Hubungi
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+            <a href="#home" class="block text-slate-700 font-medium hover:text-brand-600">Beranda</a>
+            <a href="#about" class="block text-slate-700 font-medium hover:text-brand-600">Tentang</a>
+            <a href="#services" class="block text-slate-700 font-medium hover:text-brand-600">Layanan</a>
+            <a href="#process" class="block text-slate-700 font-medium hover:text-brand-600">Proses</a>
+            <a href="#portfolio" class="block text-slate-700 font-medium hover:text-brand-600">Portofolio</a>
+            <a href="#blog" class="block text-slate-700 font-medium hover:text-brand-600">Blog</a>
+            <a href="#contact" class="block text-center w-full py-2 rounded-full bg-brand-600 text-white font-medium">Hubungi</a>
+        </div>
+    </header>
+
+    <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-24 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="md:col-span-7 space-y-8">
+            <div class="space-y-4">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700">
+                    <span class="w-2 h-2 rounded-full bg-brand-600 mr-2 animate-pulse"></span> Mahasiswa & Pengembang Universitas Madura
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Halo, Saya <br><span class="text-brand-600">Ahmad Farizi</span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-600 max-w-lg leading-relaxed">
+                    Saya seorang Fullstack Developer yang bersemangat dan berbasis di Madura, Indonesia. Saya berupaya membangun aplikasi web yang imersif dan indah melalui kode yang dikerjakan dengan cermat dan solusi end-to-end yang mulus.
+                </p>
+            </div>
+
+            <!-- Action Button -->
+            <div>
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-brand-600 text-white font-semibold text-sm shadow-xl shadow-brand-600/30 hover:bg-brand-700 transition transform hover:-translate-y-0.5">
+                    Halo <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/80 max-w-md">
+                <div class="space-y-1">
+                    <h3 class="text-2xl font-bold text-slate-950">3 Y.</h3>
+                    <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Pengalaman</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-2xl font-bold text-slate-950">40+</h3>
+                    <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Proyek Selesai</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-2xl font-bold text-slate-950">25+</h3>
+                    <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Klien Puas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Profile Image Card -->
+        <div class="md:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-sm">
+                <div class="absolute -inset-2 bg-gradient-to-r from-brand-500 to-purple-400 rounded-3xl blur-xl opacity-30"></div>
+                <div class="relative glass-card p-4 rounded-3xl shadow-2xl">
+                    <img src="profile.png" alt="Ahmad Farizi" class="w-full h-auto rounded-2xl object-cover shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 shadow-xl grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+            <!-- Left Mini Profile -->
+            <div class="md:col-span-5 flex flex-col items-center">
+                <div class="w-full max-w-xs relative rounded-2xl overflow-hidden shadow-lg mb-6">
+                    <img src="profile.png" alt="Ahmad Farizi" class="w-full h-auto object-cover">
+                </div>
+                <!-- Social Media Bar -->
+                <div class="flex space-x-3">
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition shadow-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition shadow-sm"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition shadow-sm"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition shadow-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition shadow-sm"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Right About Content -->
+            <div class="md:col-span-7 space-y-6">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700 uppercase tracking-wider">Tentang Saya</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                    Saya Fullstack Developer Profesional dari Universitas Madura
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Belajar di Universitas Madura telah memperkuat fondasi teknis dan pola pikir pemecahan masalah saya. Saya merancang dan mengembangkan layanan untuk pelanggan yang mengkhususkan diri dalam membuat situs web yang stylish dan modern, layanan web, serta toko online. Passion saya adalah merancang pengalaman pengguna digital yang memikat dan mengonversi.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    Baik Anda membutuhkan aplikasi web full-stack maupun desain antarmuka pengguna yang rapi, saya membawa dedikasi kreatif dan standar kode bersih ke setiap tonggak.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#portfolio" class="px-6 py-3 rounded-xl bg-brand-600 text-white font-medium text-sm shadow-lg shadow-brand-600/30 hover:bg-brand-700 transition">
+                        Proyek Saya
+                    </a>
+                    <a href="#" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-medium text-sm hover:bg-slate-50 transition shadow-sm flex items-center">
+                        <i class="fa-solid fa-download mr-2 text-brand-600"></i> Unduh CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="max-w-xl mb-12">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700 uppercase tracking-wider mb-3">Alur Kerja</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Proses Kerja</h2>
+            <p class="text-slate-600 mt-2">Pendekatan sistematis untuk mewujudkan visi digital Anda dengan jaminan kualitas dan keterlibatan.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Step 1 -->
+            <div class="glass-card p-6 rounded-3xl shadow-lg hover:shadow-xl transition flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl shadow-md shadow-brand-600/30 mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">1. Riset</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Mengumpulkan wawasan pengguna, menganalisis struktur kompetitor, dan mendefinisikan kebutuhan proyek sesuai standar Universitas Madura.
+                    </p>
+                </div>
+                <div class="pt-6 mt-4 border-t border-slate-100 text-xs font-bold text-brand-600">LANGKAH SATU</div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="glass-card p-6 rounded-3xl shadow-lg hover:shadow-xl transition flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl shadow-md shadow-brand-600/30 mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">2. Analisis</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Mengevaluasi arsitektur informasi, alur pengguna, dan kelayakan teknis untuk menyusun cetak biru aplikasi yang kuat.
+                    </p>
+                </div>
+                <div class="pt-6 mt-4 border-t border-slate-100 text-xs font-bold text-brand-600">LANGKAH DUA</div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="glass-card p-6 rounded-3xl shadow-lg hover:shadow-xl transition flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl shadow-md shadow-brand-600/30 mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">3. Desain</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Membuat mockup UI berkualitas tinggi, prototipe interaktif, dan struktur komponen front-end yang skalabel.
+                    </p>
+                </div>
+                <div class="pt-6 mt-4 border-t border-slate-100 text-xs font-bold text-brand-600">LANGKAH TIGA</div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="glass-card p-6 rounded-3xl shadow-lg hover:shadow-xl transition flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl shadow-md shadow-brand-600/30 mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">4. Peluncuran</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Menerapkan solusi web yang dioptimalkan dengan kode bersih, tata letak responsif, dan kompatibilitas lintas browser penuh.
+                    </p>
+                </div>
+                <div class="pt-6 mt-4 border-t border-slate-100 text-xs font-bold text-brand-600">LANGKAH EMPAT</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700 uppercase tracking-wider mb-3">Galeri</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Portfolio</h2>
+            <p class="text-slate-600 mt-2">Terdapat berbagai macam proyek yang dirancang dan dikembangkan oleh Ahmad Farizi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="glass-card rounded-3xl overflow-hidden shadow-lg group hover:shadow-2xl transition">
+                <div class="h-56 overflow-hidden bg-slate-900 relative">
+                    <img src="https://i.pinimg.com/736x/4c/47/71/4c4771cb8762ad6e9aa4d73e13aec095.jpg" alt="Web Absensi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-brand-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="px-4 py-2 rounded-full bg-white text-slate-900 font-semibold text-xs shadow-lg">Lihat Detail</span>
+                    </div>
+                </div>
+                <div class="p-6 space-y-2">
+                    <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">Web App</span>
+                    <h3 class="font-bold text-lg text-slate-900">Web Absensi</h3>
+                    <p class="text-sm text-slate-600">Sistem absensi online berbasis web untuk mahasiswa dan dosen Universitas Madura.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="glass-card rounded-3xl overflow-hidden shadow-lg group hover:shadow-2xl transition">
+                <div class="h-56 overflow-hidden bg-slate-900 relative">
+                    <img src="https://placehold.co/600x400/4c1d95/ffffff?text=Madura+E-Commerce" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/cbd5e1/475569?text=Project+Two'">
+                    <div class="absolute inset-0 bg-brand-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="px-4 py-2 rounded-full bg-white text-slate-900 font-semibold text-xs shadow-lg">Lihat Detail</span>
+                    </div>
+                </div>
+                <div class="p-6 space-y-2">
+                    <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">UI E-Commerce</span>
+                    <h3 class="font-bold text-lg text-slate-900">Marketplace Batik Lokal</h3>
+                    <p class="text-sm text-slate-600">Memberdayakan pengrajin lokal melalui desain toko digital yang stylish.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="glass-card rounded-3xl overflow-hidden shadow-lg group hover:shadow-2xl transition">
+                <div class="h-56 overflow-hidden bg-slate-900 relative">
+                    <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Mobile+App+Design" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/cbd5e1/475569?text=Project+Three'">
+                    <div class="absolute inset-0 bg-brand-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="px-4 py-2 rounded-full bg-white text-slate-900 font-semibold text-xs shadow-lg">Lihat Detail</span>
+                    </div>
+                </div>
+                <div class="p-6 space-y-2">
+                    <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">UX Mobile</span>
+                    <h3 class="font-bold text-lg text-slate-900">Aplikasi Manajemen Tugas</h3>
+                    <p class="text-sm text-slate-600">Aplikasi mobile produktivitas yang dirancang untuk mahasiswa dan profesional modern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 shadow-xl bg-gradient-to-br from-white/90 to-brand-50/50">
+            <div class="max-w-xl mx-auto text-center space-y-4 mb-10">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700 uppercase tracking-wider">Hubungi Saya</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Mari Bekerja Sama</h2>
+                <p class="text-slate-600 text-sm">Punya proyek dalam pikiran atau ingin berkolaborasi? Kirim pesan Anda di bawah ini!</p>
+            </div>
+
+            <form class="max-w-2xl mx-auto space-y-4" onsubmit="event.preventDefault(); showToast();">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Nama Anda" required class="w-full px-5 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:border-brand-600 shadow-sm">
+                    <input type="email" placeholder="Email Anda" required class="w-full px-5 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:border-brand-600 shadow-sm">
+                </div>
+                <input type="text" placeholder="Subjek" required class="w-full px-5 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:border-brand-600 shadow-sm">
+                <textarea rows="4" placeholder="Pesan Anda" required class="w-full px-5 py-3 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:border-brand-600 shadow-sm"></textarea>
+                <div class="text-center">
+                    <button type="submit" class="px-8 py-3.5 rounded-full bg-brand-600 text-white font-semibold text-sm shadow-xl shadow-brand-600/30 hover:bg-brand-700 transition">
+                        Kirim Pesan
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white/50 backdrop-blur-sm py-8 text-center text-sm text-slate-500">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Ahmad Farizi. Universitas Madura. Semua hak dilindungi.</p>
+            <div class="flex space-x-6">
+                <a href="#home" class="hover:text-brand-600 transition">Kebijakan Privasi</a>
+                <a href="#home" class="hover:text-brand-600 transition">Syarat Layanan</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-slate-900 text-white px-6 py-3 rounded-xl shadow-xl flex items-center space-x-3">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span class="text-sm font-medium">Pesan berhasil dikirim! Terima kasih.</span>
+    </div>
+
+    <!-- JavaScript for Mobile Menu and Toast -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
