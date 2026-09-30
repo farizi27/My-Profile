@@ -1,5 +1,9 @@
 # Ahmad Farizi — Portofolio Pribadi
 
+<p align="center">
+  <img src="Shisui Uchiha PFP lite.jpg" alt="Shisui Uchiha" width="200" style="border-radius: 12px;">
+</p>
+
 Portofolio pribadi Ahmad Farizi, Fullstack Developer dari Universitas Madura. Menampilkan profil, proses kerja, dan proyek-proyek yang telah dirancang dan dikembangkan.
 
 ## Teknologi
